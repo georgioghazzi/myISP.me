@@ -1,0 +1,42 @@
+page-home {
+
+    .bg{
+      background-image: url('../assets/imgs/Login-bg.jpg');
+      background-repeat : no-repeat;
+      background-position : center;
+      background-size:contain;
+    }
+    .logo{
+        width: 50% !important ;
+       margin-left:25%;
+       padding-top:80px;
+       padding-bottom: 100px;
+    }
+        ion-input{
+           
+            border-bottom:rgba(242, 241, 239, 1) solid 1px;
+            $text-input-placeholder-color:#fff;
+                }
+                
+             
+    .inUsername{
+        
+    }
+    .inPassword{
+            padding-top:10px;
+            
+            
+    }
+    .btn{
+        padding-top:20px;
+  
+    }
+    .signIn{
+        display:block;
+        height: 50px;
+        
+ 
+        border: 1px ;
+    }
+  }
+  

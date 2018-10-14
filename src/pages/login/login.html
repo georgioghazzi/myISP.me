@@ -1,0 +1,22 @@
+
+
+<ion-content class="bg" padding>
+  <img  src="assets/imgs/logo.png" alt="logo" class="logo">
+  <ion-list no-lines class="inputs">
+    <ion-item>
+      <ion-input class="inUsername" type="text" [(ngModel)]="userData.email" placeholder="Username"></ion-input>
+    </ion-item>
+    <ion-item>
+       
+        <ion-input class="inPassword" type="password" [(ngModel)]="userData.password" placeholder="Password"></ion-input>
+        
+      </ion-item>
+      <ion-item>
+        <div class=btn>
+          
+        <button (click)="login()" class="signIn" ion-button round block large>Sign In</button>
+      </div>
+      </ion-item>
+
+  </ion-list>
+</ion-content>
