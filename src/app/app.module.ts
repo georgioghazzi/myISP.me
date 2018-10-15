@@ -1,7 +1,6 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
-import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { MyApp } from './app.component';
 import { AuthService } from '../providers/auth-service';
 import { SplitPane } from '../providers/split-pane';
@@ -18,6 +17,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { MomentModule } from 'angular2-moment';
 import { LinkyModule } from 'angular-linky';
+import { InvoiceDataProvider } from '../providers/invoice-data/invoice-data';
 
 @NgModule({
   declarations: [
@@ -41,9 +41,10 @@ import { LinkyModule } from 'angular-linky';
   ],
   providers: [
     StatusBar,
-    BarcodeScanner,
     SplashScreen,AuthService,SplitPane,Common,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    InvoiceDataProvider,
+    InvoiceDataProvider
   ]
 })
 export class AppModule {}
