@@ -44,7 +44,6 @@ import { InvoiceDataProvider } from '../providers/invoice-data';
     SplashScreen,AuthService,SplitPane,Common,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     InvoiceDataProvider,
-    InvoiceDataProvider
   ]
 })
 export class AppModule {}

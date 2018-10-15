@@ -35,6 +35,7 @@ export class Login {
       console.log(this.resposeData.status);
      localStorage.setItem('userData', JSON.stringify(this.resposeData) )
       this.presentToast("Welcome Back "+this.resposeData.FirstName+" "+this.resposeData.LastName);
+      this.navCtrl.push("WelcomePage")
   }
   else{
     this.presentToast("Please give valid username and password");
