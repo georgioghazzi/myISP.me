@@ -17,7 +17,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { MomentModule } from 'angular2-moment';
 import { LinkyModule } from 'angular-linky';
-import { InvoiceDataProvider } from '../providers/invoice-data/invoice-data';
+import { InvoiceDataProvider } from '../providers/invoice-data';
 
 @NgModule({
   declarations: [
